@@ -1,18 +1,22 @@
+import classes from './Content.module.css';
+
 const Content = () => {
     return (
         <div>
-            <h1>The Future of Work in the now: Why you should Become Remote-ready</h1>
-            <h3>Infographic</h3>
-            <div>
-                The results are in, and the verdict? Remote is here to stay. Thanks to a global pandemic companies have had to reevaluate the power of distributed workforces and we’ve put together all the reasons why going remote is the right move to make. In this infographics, you’ll see:
+            <h1 className={classes.Title}>The Future of Work in the now: Why you should Become Remote-ready</h1>
+            <h3 className={classes.SubTitle}>Infographic</h3>
+            <div className={classes.Info}>
+                <div>
+                    The results are in, and the verdict? Remote is here to stay. Thanks to a global pandemic companies have had to reevaluate the power of distributed workforces and we’ve put together all the reasons why going remote is the right move to make. In this infographics, you’ll see:
             </div>
-            <ul>
-                <li>How remote work broadens the talent pool</li>
-                <li>The productivity results behind distributed teams</li>
-                <li>An increase in diversity as a result of remote recruitment</li>
-                <li>Money saved on operational costs and salary negotiations</li>
-            </ul>
-            <div>What better time to refresh your strategy than on the brink of a whole new world? Dig into this list of recruiting methodologies and adjust your sails for the future!</div>
+                <ul>
+                    <li>How remote work broadens the talent pool</li>
+                    <li>The productivity results behind distributed teams</li>
+                    <li>An increase in diversity as a result of remote recruitment</li>
+                    <li>Money saved on operational costs and salary negotiations</li>
+                </ul>
+                <div>What better time to refresh your strategy than on the brink of a whole new world? Dig into this list of recruiting methodologies and adjust your sails for the future!</div>
+            </div>
         </div>
     );
 };

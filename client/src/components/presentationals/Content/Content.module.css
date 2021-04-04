@@ -1,0 +1,21 @@
+.Title {
+    width: 602px;
+    height: 190px;
+    text-align: left;
+    font: normal normal 800 40px/60px Mulish;
+    letter-spacing: 0px;
+    color: #010a60;
+    margin-bottom: 0;
+}
+
+.SubTitle {
+    text-align: left;
+    font: normal normal normal 24px/38px Mulish;
+    letter-spacing: 0px;
+    color: #010A60;
+    opacity: 1;
+}
+
+.Info {
+    width: 532px;
+}

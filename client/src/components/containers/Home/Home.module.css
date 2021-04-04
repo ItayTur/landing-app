@@ -1,5 +1,6 @@
 .Home {
-    width: 1200px;
     margin: 0 auto;
     display: flex;
+    padding: 215px 242px 100px 238px;
+    justify-content: space-evenly;
 }
