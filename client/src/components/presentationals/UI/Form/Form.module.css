@@ -1,6 +1,28 @@
 .Form {
     display: flex;
     flex-direction: column;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 16px #00000029;
+    padding: 74px 30px 50px 40px;
+    width: 412px;
+    height: 673px;
+}
+
+.Title {
+    margin: 0;
+    text-align: center;
+    font: normal normal 900 24px/2em Mulish;
+    letter-spacing: 0px;
+    color: #010a60;
+}
+
+.SubTitle {
+    margin: 0;
+    text-align: center;
+    text-align: center;
+    font: normal normal normal 18px/59px Mulish;
+    letter-spacing: 0px;
+    color: #010a60;
 }
 
 .Inputs {
@@ -8,4 +30,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    height: 50%;
+    margin-bottom: 30px;
 }

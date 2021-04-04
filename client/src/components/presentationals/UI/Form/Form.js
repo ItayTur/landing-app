@@ -89,13 +89,15 @@ class Form extends Component {
 
     render() {
         const { isFormValid } = this.state
-        const { submitText, title } = this.props
-        const titleJsx = title && <h2>{title}</h2>
+        const { submitText, title, subTitle } = this.props
+        const titleJsx = title && <h2 className={classes.Title}>{title}</h2>
+        const subTitleJsx = subTitle && <h4 className={classes.SubTitle}>{subTitle}</h4>
         const inputs = this.getInputs();
 
         return (
             <form className={classes.Form} onSubmit={this.submitHandler}>
                 {titleJsx}
+                {subTitleJsx}
                 {inputs}
                 <Button text={submitText} isDisabled={!isFormValid} />
             </form>

@@ -1,0 +1,13 @@
+.Button {
+    background: #ffa52e 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    height: 54px;
+    width: 188px;
+    align-self: center;
+}
+
+.Button:disabled {
+    background: lightgray;
+}

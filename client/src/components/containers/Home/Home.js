@@ -16,6 +16,7 @@ const Home = () => {
             <Content />
             <Form
                 title={'Want to get the full version?'}
+                subTitle="Fill in the form below"
                 inputs={contactInputs}
                 submitText="Download now >>"
                 onSubmit={onSubmit}

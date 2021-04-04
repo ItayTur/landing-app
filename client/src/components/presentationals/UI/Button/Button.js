@@ -1,6 +1,8 @@
+import classes from './Button.module.css';
+
 const Button = ({ onClick, text, isDisabled }) => {
     return (
-        <button onClick={onClick} disabled={isDisabled}>
+        <button className={classes.Button} onClick={onClick} disabled={isDisabled}>
             {text}
         </button>
     );

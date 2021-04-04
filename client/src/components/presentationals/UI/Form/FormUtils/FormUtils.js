@@ -1,4 +1,4 @@
-export const getInputObj = ({ type = 'text', label, value = '', validations = [], error = 'Invalid input', isValid = false, attrs = {} }) => {
+export const getInputObj = ({ type = 'text', label, value = '', validations = [], error = 'Invalid input', isValid = false, attrs = {}, placeholder = '' }) => {
     return {
         type,
         label,
@@ -7,7 +7,8 @@ export const getInputObj = ({ type = 'text', label, value = '', validations = []
         isValid,
         isBlured: false,
         validations,
-        error
+        error,
+        placeholder,
     }
 }
 
