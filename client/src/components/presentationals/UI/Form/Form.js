@@ -64,7 +64,7 @@ class Form extends Component {
     submitHandler = event => {
         try {
             event.preventDefault();
-            const { inputs } = this.state;
+            const { inputs, isFormValid } = this.state;
             const { onSubmit } = this.props;
             const formData = this.getInputsData(inputs);
             const updatedInputs = { ...inputs };
@@ -73,7 +73,7 @@ class Form extends Component {
                 updatedInput.isBlured = true;
                 updatedInputs[input] = updatedInput;
             }
-            this.setState({ inputs: updatedInputs }, () => onSubmit({ formData }));
+            this.setState({ inputs: updatedInputs }, () => isFormValid && onSubmit({ formData }));
         } catch (error) {
             alert('submit failed')
         }
