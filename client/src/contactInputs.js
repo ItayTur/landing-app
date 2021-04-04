@@ -2,7 +2,7 @@ import { validations } from '@itaytur/validation';
 import { getInputObj, getValidation } from './components/presentationals/UI/Form/FormUtils/FormUtils';
 
 const inputs = {
-    fullName: getInputObj({
+    name: getInputObj({
         label: 'Full name',
         type: 'text',
         validations: [
@@ -12,7 +12,7 @@ const inputs = {
         error: 'Full name is required',
         placeholder: 'Full name',
     }),
-    companyName: getInputObj({
+    company_name: getInputObj({
         label: 'Company name',
         type: 'text',
         validations: [
@@ -31,7 +31,7 @@ const inputs = {
         error: 'Phone is required',
         placeholder: 'Phone',
     }),
-    workEmail: getInputObj({
+    email: getInputObj({
         label: 'Work email',
         type: 'text',
         validations: [
@@ -48,6 +48,7 @@ const inputs = {
             getValidation(validations.IS_REQUIRED),
         ],
         placeholder: 'I agree to the privacy policy including for Joonko to use my contact details to contact me for marketing purposes.',
+        error: 'Privacy check is required'
     }),
 }
 

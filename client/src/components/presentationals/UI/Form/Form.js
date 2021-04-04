@@ -25,9 +25,14 @@ class Form extends Component {
     changeHandler = ({ input, event }) => this.inputUpdateHandler({
         input,
         updater: inputToUpdate => {
-            const { value } = event.target
-            inputToUpdate.isValid = validate.isValidValue(value, inputToUpdate.validations)
-            inputToUpdate.value = value
+            if (this.state.inputs[input].type === 'radio') {
+                inputToUpdate.value = event.target.checked;
+                inputToUpdate.isValid = event.target.checked;
+            } else {
+                const { value } = event.target;
+                inputToUpdate.isValid = validate.isValidValue(value, inputToUpdate.validations);
+                inputToUpdate.value = value;
+            }
             let isFormValid = true
             const { inputs } = this.state
             for (let inputIndex in inputs) {
@@ -62,7 +67,13 @@ class Form extends Component {
             const { inputs } = this.state;
             const { onSubmit } = this.props;
             const formData = this.getInputsData(inputs);
-            onSubmit({ formData });
+            const updatedInputs = { ...inputs };
+            for (let input in updatedInputs) {
+                const updatedInput = { ...updatedInputs[input] }
+                updatedInput.isBlured = true;
+                updatedInputs[input] = updatedInput;
+            }
+            this.setState({ inputs: updatedInputs }, () => onSubmit({ formData }));
         } catch (error) {
             alert('submit failed')
         }
@@ -88,7 +99,6 @@ class Form extends Component {
     }
 
     render() {
-        const { isFormValid } = this.state
         const { submitText, title, subTitle } = this.props
         const titleJsx = title && <h2 className={classes.Title}>{title}</h2>
         const subTitleJsx = subTitle && <h4 className={classes.SubTitle}>{subTitle}</h4>
@@ -99,7 +109,7 @@ class Form extends Component {
                 {titleJsx}
                 {subTitleJsx}
                 {inputs}
-                <Button text={submitText} isDisabled={!isFormValid} />
+                <Button text={submitText} />
             </form>
         )
     }

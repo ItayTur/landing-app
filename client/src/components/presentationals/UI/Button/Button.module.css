@@ -11,3 +11,7 @@
 .Button:disabled {
     background: lightgray;
 }
+
+.Button:focus {
+    outline: none;
+}

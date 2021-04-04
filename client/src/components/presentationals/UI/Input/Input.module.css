@@ -55,6 +55,10 @@
     flex-direction: row;
 }
 
+.RadioError {
+    border: 1px solid red;
+}
+
 .Placeholder {
     text-align: left;
     font: normal normal 300 14px/22px Mulish;
