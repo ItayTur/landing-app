@@ -6,6 +6,7 @@
     padding: 74px 30px 50px 40px;
     width: 412px;
     height: 673px;
+    z-index: 10;
 }
 
 .Title {

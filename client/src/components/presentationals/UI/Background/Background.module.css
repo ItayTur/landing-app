@@ -1,0 +1,60 @@
+.Background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.LeftSqure {
+    position: absolute;
+    background: transparent url("../../../../assets/Rectangle\ 1958.svg") 0% 0% no-repeat padding-box;
+    width: 116px;
+    height: 116px;
+    left: 23px;
+    top: 170px;
+}
+
+.TopSqure {
+    position: absolute;
+    background: transparent url("../../../../assets/Rectangle\ 1956.svg") 0% 0% no-repeat padding-box;
+    width: 73px;
+    height: 73px;
+    left: 952px;
+    top: -22px;
+}
+
+.BottomSqure {
+    position: absolute;
+    background: transparent url("../../../../assets/Rectangle\ 1957.svg") 0% 0% no-repeat padding-box;
+    width: 40px;
+    height: 40px;
+    left: 840px;
+    top: 616px;
+}
+
+.BottomX {
+    position: absolute;
+    background: transparent url("../../../../assets/Group\ 5933.svg") 0% 0% no-repeat padding-box;
+    width: 30px;
+    height: 30px;
+    left: 968px;
+    top: 700px;
+}
+
+.Circle {
+    position: absolute;
+    background: transparent url("../../../../assets/Ellipse\ 823.svg") 0% 0% no-repeat padding-box;
+    width: 85px;
+    height: 85px;
+    left: 1515px;
+    top: 515px;
+}
+
+.RightX {
+    position: absolute;
+    background: transparent url("../../../../assets/Group\ 5934.svg") 0% 0% no-repeat padding-box;
+    width: 60px;
+    height: 60px;
+    left: 1600px;
+    top: 230px;
+}

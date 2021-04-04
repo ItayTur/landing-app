@@ -2,6 +2,7 @@ import contactInputs from '../../../contactInputs';
 
 import Content from '../../presentationals/Content/Content';
 import Form from '../../presentationals/UI/Form/Form';
+import Background from '../../presentationals/UI/Background/Background';
 
 import classes from './Home.module.css';
 
@@ -13,6 +14,7 @@ const Home = () => {
 
     return (
         <div className={classes.Home}>
+            <Background />
             <Content />
             <Form
                 title={'Want to get the full version?'}
